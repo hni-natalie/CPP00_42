@@ -88,11 +88,13 @@ void PhoneBook::add_contact() {
 }
 
 void PhoneBook::search_contact() const {
+	// header
 	std::cout << std::setw(10) << "Index" << "|"
 			<< std::setw(10) << "First Name" << "|"
 			<< std::setw(10) << "Last Name" << "|"
 			<< std::setw(10) << "Nickname" << "\n";
 
+	// display first 10 character each
 	for (size_t i = 0; i < contactCounts; i++) {
 		contacts[i].displayShort(i); 
 	}
@@ -112,5 +114,7 @@ void PhoneBook::search_contact() const {
 		std::cout << "No contact at this index.\n";
 		return;
 	}
+
+	// display full detail
 	contacts[index].displayFull();
 }

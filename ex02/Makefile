@@ -14,9 +14,9 @@ CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 RM = rm -f
 
-NAME = phonebook
+NAME = account
 
-SRC = Contact.cpp main.cpp PhoneBook.cpp 
+SRC = Account.cpp main.cpp tests.cpp 
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)

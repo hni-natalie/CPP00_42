@@ -19,7 +19,10 @@ int main() {
 	std::cout << "Welcome to your PhoneBook!" << std::endl;
 	while (true) {
 		std::cout << "Enter command (ADD, SEARCH, EXIT): ";
-		std::getline(std::cin, command);
+		if(!std::getline(std::cin, command)) {
+			std::cout << "Input interrupted. Exit Program." << std::endl;
+			break;
+		}
 
 		if (command == "ADD") {
 			phoneBook.add_contact();
@@ -29,7 +32,7 @@ int main() {
 			std::cout << "Exiting the program" << std::endl; 
 			break;	
 		} else {
-			std::cout << "Invalid command. Try Again." << std::endl;	
+			std::cout << "Invalid command. Try Again." << std::endl;
 		}
 	}
 	return 0;

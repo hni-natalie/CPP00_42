@@ -12,6 +12,7 @@
 
 // import this library to use std library
 #include <iostream>
+#include <cctype>
 
 int main(int argc, char **argv)
 {
@@ -21,14 +22,12 @@ int main(int argc, char **argv)
 		return 0;
 	}
 		
-	for (int i = 1; i < argc; ++i)
+	for (int i = 1; i < argc; i++)
 	{
-		char *ptr = argv[i];
-		while (*ptr)
+		for(int j = 0; argv[i][j] != '\0'; j++)
 		{
-			if(*ptr >= 'a' && *ptr <= 'z')
-				*ptr -= 'a' - 'A';
-			ptr++;
+			if (std::islower(argv[i][j]))
+				argv[i][j] = std::toupper(argv[i][j]);
 		}
 		std::cout << argv[i];
 	}
