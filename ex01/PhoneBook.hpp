@@ -29,7 +29,7 @@ class PhoneBook {
 		// to promise this function won't change any member variables
 		// member variables are the variables declared inside a class
 		
-		// constructor is required to initialise nextIndex value
+		// constructor is required to initialise nextIndex and contactCounts value
 		PhoneBook(); 
 		void add_contact();
 		void search_contact() const;

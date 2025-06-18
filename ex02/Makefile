@@ -16,7 +16,7 @@ RM = rm -f
 
 NAME = account
 
-SRC = Account.cpp main.cpp tests.cpp 
+SRC = Account.cpp tests.cpp 
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)

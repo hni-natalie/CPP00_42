@@ -18,11 +18,15 @@ bool PhoneBook::isAlphaOnly(const std::string &str) const {
 	if (str.empty())
 		return false;
 
+	bool hasAlpha = false;
+
 	for (size_t i = 0; i < str.length(); i++) {
-		if (!std::isalpha(str[i]) && !std::isspace(str[i]))
+		if (std::isalpha(str[i]))
+			hasAlpha = true;
+		else if(!std::isspace(str[i]))
 			return false;
 	}
-	return true;
+	return hasAlpha;
 }
 
 bool PhoneBook::isDigitOnly(const std::string &str) const {
