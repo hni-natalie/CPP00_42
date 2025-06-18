@@ -6,7 +6,7 @@
 /*   By: hni-xuan <hni-xuan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/18 13:29:44 by hni-xuan          #+#    #+#             */
-/*   Updated: 2025/06/18 14:11:17 by hni-xuan         ###   ########.fr       */
+/*   Updated: 2025/06/18 15:47:51 by hni-xuan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,4 @@ int main(int argc, char **argv)
 	std::cout << std::endl;
 	return 0;
 }
+
