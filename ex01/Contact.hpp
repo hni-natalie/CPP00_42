@@ -6,7 +6,7 @@
 /*   By: hni-xuan <hni-xuan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/18 14:28:38 by hni-xuan          #+#    #+#             */
-/*   Updated: 2025/06/18 17:31:31 by hni-xuan         ###   ########.fr       */
+/*   Updated: 2025/06/19 14:52:30 by hni-xuan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Contact {
 		std::string darkestSecret;
 		std::string formatField(const std::string &str) const;
 		
-		public:
+	public:
 		void set_contact(const std::string &first, const std::string &last, 
 			const std::string &nick, const std::string &phone, const std::string &secret);
 		void displayShort(int index) const;
