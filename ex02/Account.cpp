@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Account.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  #+#  +:+       +#+        */
+/*   By: hni-xuan <hni-xuan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-06-18 13:21:14 by root              #+#    #+#             */
-/*   Updated: 2025-06-18 13:21:14 by root             ###   ########.fr       */
+/*   Created: 2025/06/18 13:21:14 by root              #+#    #+#             */
+/*   Updated: 2025/06/19 17:11:50 by hni-xuan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,8 +115,8 @@ void Account::_displayTimestamp() {
 	// std::tm holds broken-down values like year, month, day, hour
 	std::tm *cur_time = std::localtime(&now);
 	
-	char buffer[17];
+	char buffer[19];
 	// format date and time into a string
-	std::strftime(buffer, sizeof(buffer), "[%y%m%d_%H%M%S]", cur_time);
+	std::strftime(buffer, sizeof(buffer), "[%Y%m%d_%H%M%S]", cur_time);
 	std::cout << buffer << " ";
 }
